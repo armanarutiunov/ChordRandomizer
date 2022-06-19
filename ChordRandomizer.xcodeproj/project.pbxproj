@@ -67,8 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */,
-				28FFCCAD285F4D55000615DA /* RandomizerView.swift */,
-				28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */,
+				28FFCCCB285F51E4000615DA /* Randomizer */,
 				28FFCCBC285F4DDD000615DA /* Music Theory */,
 				28FFCCC3285F4DDD000615DA /* Utils */,
 				28FFCCAF285F4D56000615DA /* Assets.xcassets */,
@@ -112,6 +111,15 @@
 				28FFCCC4285F4DDD000615DA /* Randomizer.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		28FFCCCB285F51E4000615DA /* Randomizer */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCAD285F4D55000615DA /* RandomizerView.swift */,
+				28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */,
+			);
+			path = Randomizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

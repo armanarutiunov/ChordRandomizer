@@ -11,11 +11,11 @@ import Combine
 
 final class RandomizerViewModel: ObservableObject {
 
-    @Published var chord: Chord
+    // MARK: - Properties
 
-    init() {
-        chord = Triad.random
-    }
+    @Published var chord: Chord = Triad.random
+
+    // MARK: - Actions
 
     func makeRandomTriad() {
         chord = Triad.random
