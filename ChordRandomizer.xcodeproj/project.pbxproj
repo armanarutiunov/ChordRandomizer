@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28FFCCAC285F4D55000615DA /* ChordRandomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */; };
+		28FFCCAE285F4D55000615DA /* RandomizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCAD285F4D55000615DA /* RandomizerView.swift */; };
+		28FFCCB0285F4D56000615DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCCAF285F4D56000615DA /* Assets.xcassets */; };
+		28FFCCB4285F4D56000615DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCCB3285F4D56000615DA /* Preview Assets.xcassets */; };
+		28FFCCBB285F4DA9000615DA /* RandomizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */; };
+		28FFCCC5285F4DDD000615DA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBD285F4DDD000615DA /* Note.swift */; };
+		28FFCCC6285F4DDD000615DA /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBF285F4DDD000615DA /* Quality.swift */; };
+		28FFCCC7285F4DDD000615DA /* Seventh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC0285F4DDD000615DA /* Seventh.swift */; };
+		28FFCCC8285F4DDD000615DA /* Triad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC1285F4DDD000615DA /* Triad.swift */; };
+		28FFCCC9285F4DDD000615DA /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC2285F4DDD000615DA /* Chord.swift */; };
+		28FFCCCA285F4DDD000615DA /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC4285F4DDD000615DA /* Randomizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28FFCCA8285F4D55000615DA /* ChordRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordRandomizerApp.swift; sourceTree = "<group>"; };
+		28FFCCAD285F4D55000615DA /* RandomizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerView.swift; sourceTree = "<group>"; };
+		28FFCCAF285F4D56000615DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28FFCCB1285F4D56000615DA /* ChordRandomizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChordRandomizer.entitlements; sourceTree = "<group>"; };
+		28FFCCB3285F4D56000615DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerViewModel.swift; sourceTree = "<group>"; };
+		28FFCCBD285F4DDD000615DA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		28FFCCBF285F4DDD000615DA /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
+		28FFCCC0285F4DDD000615DA /* Seventh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seventh.swift; sourceTree = "<group>"; };
+		28FFCCC1285F4DDD000615DA /* Triad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triad.swift; sourceTree = "<group>"; };
+		28FFCCC2285F4DDD000615DA /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
+		28FFCCC4285F4DDD000615DA /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28FFCCA5285F4D55000615DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28FFCC9F285F4D55000615DA = {
+			isa = PBXGroup;
+			children = (
+				28FFCCAA285F4D55000615DA /* ChordRandomizer */,
+				28FFCCA9285F4D55000615DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28FFCCA9285F4D55000615DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCA8285F4D55000615DA /* ChordRandomizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28FFCCAA285F4D55000615DA /* ChordRandomizer */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */,
+				28FFCCAD285F4D55000615DA /* RandomizerView.swift */,
+				28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */,
+				28FFCCBC285F4DDD000615DA /* Music Theory */,
+				28FFCCC3285F4DDD000615DA /* Utils */,
+				28FFCCAF285F4D56000615DA /* Assets.xcassets */,
+				28FFCCB1285F4D56000615DA /* ChordRandomizer.entitlements */,
+				28FFCCB2285F4D56000615DA /* Preview Content */,
+			);
+			path = ChordRandomizer;
+			sourceTree = "<group>";
+		};
+		28FFCCB2285F4D56000615DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCB3285F4D56000615DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28FFCCBC285F4DDD000615DA /* Music Theory */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCBD285F4DDD000615DA /* Note.swift */,
+				28FFCCBE285F4DDD000615DA /* Chord */,
+			);
+			path = "Music Theory";
+			sourceTree = "<group>";
+		};
+		28FFCCBE285F4DDD000615DA /* Chord */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCBF285F4DDD000615DA /* Quality.swift */,
+				28FFCCC0285F4DDD000615DA /* Seventh.swift */,
+				28FFCCC1285F4DDD000615DA /* Triad.swift */,
+				28FFCCC2285F4DDD000615DA /* Chord.swift */,
+			);
+			path = Chord;
+			sourceTree = "<group>";
+		};
+		28FFCCC3285F4DDD000615DA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28FFCCC4285F4DDD000615DA /* Randomizer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28FFCCA7285F4D55000615DA /* ChordRandomizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28FFCCB7285F4D56000615DA /* Build configuration list for PBXNativeTarget "ChordRandomizer" */;
+			buildPhases = (
+				28FFCCA4285F4D55000615DA /* Sources */,
+				28FFCCA5285F4D55000615DA /* Frameworks */,
+				28FFCCA6285F4D55000615DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChordRandomizer;
+			productName = ChordRandomizer;
+			productReference = 28FFCCA8285F4D55000615DA /* ChordRandomizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28FFCCA0285F4D55000615DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					28FFCCA7285F4D55000615DA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 28FFCCA3285F4D55000615DA /* Build configuration list for PBXProject "ChordRandomizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28FFCC9F285F4D55000615DA;
+			productRefGroup = 28FFCCA9285F4D55000615DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28FFCCA7285F4D55000615DA /* ChordRandomizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28FFCCA6285F4D55000615DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FFCCB4285F4D56000615DA /* Preview Assets.xcassets in Resources */,
+				28FFCCB0285F4D56000615DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28FFCCA4285F4D55000615DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FFCCBB285F4DA9000615DA /* RandomizerViewModel.swift in Sources */,
+				28FFCCC7285F4DDD000615DA /* Seventh.swift in Sources */,
+				28FFCCAE285F4D55000615DA /* RandomizerView.swift in Sources */,
+				28FFCCC6285F4DDD000615DA /* Quality.swift in Sources */,
+				28FFCCC8285F4DDD000615DA /* Triad.swift in Sources */,
+				28FFCCAC285F4D55000615DA /* ChordRandomizerApp.swift in Sources */,
+				28FFCCC9285F4DDD000615DA /* Chord.swift in Sources */,
+				28FFCCCA285F4DDD000615DA /* Randomizer.swift in Sources */,
+				28FFCCC5285F4DDD000615DA /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28FFCCB5285F4D56000615DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28FFCCB6285F4D56000615DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		28FFCCB8285F4D56000615DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChordRandomizer/ChordRandomizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChordRandomizer/Preview Content\"";
+				DEVELOPMENT_TEAM = FAMK9DA8KT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armanarutiunov.ChordRandomizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28FFCCB9285F4D56000615DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChordRandomizer/ChordRandomizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChordRandomizer/Preview Content\"";
+				DEVELOPMENT_TEAM = FAMK9DA8KT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armanarutiunov.ChordRandomizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28FFCCA3285F4D55000615DA /* Build configuration list for PBXProject "ChordRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FFCCB5285F4D56000615DA /* Debug */,
+				28FFCCB6285F4D56000615DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28FFCCB7285F4D56000615DA /* Build configuration list for PBXNativeTarget "ChordRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FFCCB8285F4D56000615DA /* Debug */,
+				28FFCCB9285F4D56000615DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28FFCCA0285F4D55000615DA /* Project object */;
+}
