@@ -12,12 +12,8 @@
 		28FFCCB0285F4D56000615DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCCAF285F4D56000615DA /* Assets.xcassets */; };
 		28FFCCB4285F4D56000615DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCCB3285F4D56000615DA /* Preview Assets.xcassets */; };
 		28FFCCBB285F4DA9000615DA /* RandomizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */; };
-		28FFCCC5285F4DDD000615DA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBD285F4DDD000615DA /* Note.swift */; };
-		28FFCCC6285F4DDD000615DA /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCBF285F4DDD000615DA /* Quality.swift */; };
-		28FFCCC7285F4DDD000615DA /* Seventh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC0285F4DDD000615DA /* Seventh.swift */; };
-		28FFCCC8285F4DDD000615DA /* Triad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC1285F4DDD000615DA /* Triad.swift */; };
-		28FFCCC9285F4DDD000615DA /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC2285F4DDD000615DA /* Chord.swift */; };
-		28FFCCCA285F4DDD000615DA /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCCC4285F4DDD000615DA /* Randomizer.swift */; };
+		28FFCCDB285F56B3000615DA /* MusicTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 28FFCCDA285F56B3000615DA /* MusicTheory */; };
+		28FFCCDD285F56B3000615DA /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 28FFCCDC285F56B3000615DA /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +24,7 @@
 		28FFCCB1285F4D56000615DA /* ChordRandomizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChordRandomizer.entitlements; sourceTree = "<group>"; };
 		28FFCCB3285F4D56000615DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerViewModel.swift; sourceTree = "<group>"; };
-		28FFCCBD285F4DDD000615DA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		28FFCCBF285F4DDD000615DA /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
-		28FFCCC0285F4DDD000615DA /* Seventh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seventh.swift; sourceTree = "<group>"; };
-		28FFCCC1285F4DDD000615DA /* Triad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triad.swift; sourceTree = "<group>"; };
-		28FFCCC2285F4DDD000615DA /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
-		28FFCCC4285F4DDD000615DA /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		28FFCCD9285F55BE000615DA /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FFCCDB285F56B3000615DA /* MusicTheory in Frameworks */,
+				28FFCCDD285F56B3000615DA /* Utilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +43,10 @@
 		28FFCC9F285F4D55000615DA = {
 			isa = PBXGroup;
 			children = (
+				28FFCCD9285F55BE000615DA /* Modules */,
 				28FFCCAA285F4D55000615DA /* ChordRandomizer */,
 				28FFCCA9285F4D55000615DA /* Products */,
+				28FFCCCD285F551F000615DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +63,6 @@
 			children = (
 				28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */,
 				28FFCCCB285F51E4000615DA /* Randomizer */,
-				28FFCCBC285F4DDD000615DA /* Music Theory */,
-				28FFCCC3285F4DDD000615DA /* Utils */,
 				28FFCCAF285F4D56000615DA /* Assets.xcassets */,
 				28FFCCB1285F4D56000615DA /* ChordRandomizer.entitlements */,
 				28FFCCB2285F4D56000615DA /* Preview Content */,
@@ -85,34 +78,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		28FFCCBC285F4DDD000615DA /* Music Theory */ = {
-			isa = PBXGroup;
-			children = (
-				28FFCCBD285F4DDD000615DA /* Note.swift */,
-				28FFCCBE285F4DDD000615DA /* Chord */,
-			);
-			path = "Music Theory";
-			sourceTree = "<group>";
-		};
-		28FFCCBE285F4DDD000615DA /* Chord */ = {
-			isa = PBXGroup;
-			children = (
-				28FFCCBF285F4DDD000615DA /* Quality.swift */,
-				28FFCCC0285F4DDD000615DA /* Seventh.swift */,
-				28FFCCC1285F4DDD000615DA /* Triad.swift */,
-				28FFCCC2285F4DDD000615DA /* Chord.swift */,
-			);
-			path = Chord;
-			sourceTree = "<group>";
-		};
-		28FFCCC3285F4DDD000615DA /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				28FFCCC4285F4DDD000615DA /* Randomizer.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		28FFCCCB285F51E4000615DA /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +85,13 @@
 				28FFCCBA285F4DA9000615DA /* RandomizerViewModel.swift */,
 			);
 			path = Randomizer;
+			sourceTree = "<group>";
+		};
+		28FFCCCD285F551F000615DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +110,10 @@
 			dependencies = (
 			);
 			name = ChordRandomizer;
+			packageProductDependencies = (
+				28FFCCDA285F56B3000615DA /* MusicTheory */,
+				28FFCCDC285F56B3000615DA /* Utilities */,
+			);
 			productName = ChordRandomizer;
 			productReference = 28FFCCA8285F4D55000615DA /* ChordRandomizer.app */;
 			productType = "com.apple.product-type.application";
@@ -193,14 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28FFCCBB285F4DA9000615DA /* RandomizerViewModel.swift in Sources */,
-				28FFCCC7285F4DDD000615DA /* Seventh.swift in Sources */,
 				28FFCCAE285F4D55000615DA /* RandomizerView.swift in Sources */,
-				28FFCCC6285F4DDD000615DA /* Quality.swift in Sources */,
-				28FFCCC8285F4DDD000615DA /* Triad.swift in Sources */,
 				28FFCCAC285F4D55000615DA /* ChordRandomizerApp.swift in Sources */,
-				28FFCCC9285F4DDD000615DA /* Chord.swift in Sources */,
-				28FFCCCA285F4DDD000615DA /* Randomizer.swift in Sources */,
-				28FFCCC5285F4DDD000615DA /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +301,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -363,8 +333,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -402,6 +372,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28FFCCDA285F56B3000615DA /* MusicTheory */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicTheory;
+		};
+		28FFCCDC285F56B3000615DA /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28FFCCA0285F4D55000615DA /* Project object */;
 }

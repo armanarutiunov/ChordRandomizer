@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import Utilities
 
-struct SeventhChord: Chord {
+public struct SeventhChord: Chord {
+
+    // MARK: - Declarations
 
     enum SeventhQuality: String, CaseIterable, Quality {
         case major7 = "maj7"
@@ -20,8 +23,7 @@ struct SeventhChord: Chord {
         case augmented7 = "7#5"
 
         static var random: SeventhQuality {
-            let items: [(SeventhQuality, UInt)] = allCases.map { ($0, $0.weight) }
-            return Randomizer.weightedRandomElement(items: items)
+            Randomizer.weightedRandomElement(items: allCases) 
         }
 
         var shortDescription: String {
@@ -32,45 +34,60 @@ struct SeventhChord: Chord {
             switch self {
             case .major7:
                 return "Major 7th"
+
             case .dominant7:
                 return "Dominant 7th"
+
             case .minorMajor7:
                 return "Minor-Major 7th"
+
             case .minor7:
                 return "Minor 7th"
+
             case .halfDiminished7:
                 return "Half Diminished 7th"
+
             case .fullyDiminished7:
                 return "Fully Diminished 7th"
+
             case .augmented7:
                 return "Augmented 7th"
             }
         }
 
-        private var weight: UInt {
+        var weight: UInt {
             switch self {
             case .major7:
-                return 20
+                return 27
+
             case .dominant7:
-                return 10
+                return 16
+
             case .minorMajor7:
-                return 5
+                return 1
+
             case .minor7:
-                return 30
+                return 36
+
             case .halfDiminished7:
-                return 10
+                return 16
+
             case .fullyDiminished7:
-                return 5
+                return 2
+
             case .augmented7:
-                return 5
+                return 2
             }
         }
     }
 
-    let root: Note
-    let quality: Quality
+    // MARK: - Properties
 
-    static var random: SeventhChord {
+    public let root: Note
+
+    public let quality: any Quality
+
+    public static var random: SeventhChord {
         SeventhChord(root: Note.random, quality: SeventhQuality.random)
     }
 }

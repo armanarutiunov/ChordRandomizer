@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Combine
+import MusicTheory
 
 final class RandomizerViewModel: ObservableObject {
 

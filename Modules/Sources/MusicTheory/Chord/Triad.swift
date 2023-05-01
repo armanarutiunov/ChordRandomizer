@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import Utilities
 
-struct Triad: Chord {
+public struct Triad: Chord {
+
+    // MARK: - Declarations
 
     enum TriadQuality: String, CaseIterable, Quality {
         case major = ""
@@ -17,8 +20,7 @@ struct Triad: Chord {
         case augmented = "#5"
 
         static var random: Quality {
-            let items: [(TriadQuality, UInt)] = allCases.map { ($0, $0.weight) }
-            return Randomizer.weightedRandomElement(items: items)
+            return Randomizer.weightedRandomElement(items: allCases)
         }
 
         var shortDescription: String {
@@ -38,24 +40,30 @@ struct Triad: Chord {
             }
         }
 
-        private var weight: UInt {
+        var weight: UInt {
             switch self {
             case .major:
-                return 30
+                return 39
+
             case .minor:
-                return 30
+                return 39
+
             case .diminished:
-                return 10
+                return 19
+
             case .augmented:
-                return 5
+                return 3
             }
         }
     }
 
-    let root: Note
-    let quality: Quality
+    // MARK: - Properties
 
-    static var random: Triad {
+    public let root: Note
+
+    public let quality: Quality
+
+    public static var random: Triad {
         Triad(root: Note.random, quality: TriadQuality.random)
     }
 }

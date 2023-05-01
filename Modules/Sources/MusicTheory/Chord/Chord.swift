@@ -8,13 +8,15 @@
 
 import Foundation
 
-protocol Chord {
+public protocol Chord {
     var root: Note { get }
     var quality: Quality { get }
 }
 
 extension Chord {
-    func description(isShort: Bool = true) -> String {
-        "\(root.description) \(quality.description(isShort: isShort))"
+
+    public func description(isShort: Bool = true) -> String {
+        let space = isShort ? "" : " "
+        return root.description + space + quality.description(isShort: isShort)
     }
 }

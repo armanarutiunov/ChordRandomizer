@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum Note: CustomStringConvertible, CaseIterable {
+public enum Note: CustomStringConvertible, CaseIterable {
 
     // MARK: - Declarations
 
-    enum Accidental: String {
+    public enum Accidental: String {
         case sharp = "♯"
         case flat  = "♭"
     }
@@ -30,7 +30,7 @@ enum Note: CustomStringConvertible, CaseIterable {
     // MARK: - Properties
 
     /// This array contains all notes.
-    static let allCases: [Note] = [
+    public static let allCases: [Note] = [
         c(nil),   c(.sharp),
         d(nil),
         e(.flat), e(nil),
@@ -41,7 +41,7 @@ enum Note: CustomStringConvertible, CaseIterable {
     ]
 
     /// This function returns the frequency of this note in the 4th octave.
-    var frequency: Double {
+    private var frequency: Double {
         let index = Note.allCases.firstIndex(where: { $0 == self })! -
                     Note.allCases.firstIndex(where: { $0 == Note.a(nil) })!
 
@@ -49,7 +49,7 @@ enum Note: CustomStringConvertible, CaseIterable {
     }
 
     /// This property is used in the User Interface to show the name of this note.
-    var description: String {
+    public var description: String {
         let concat = { (letter: String, accidental: Accidental?) in
             return letter + (accidental != nil ? accidental!.rawValue : "")
         }

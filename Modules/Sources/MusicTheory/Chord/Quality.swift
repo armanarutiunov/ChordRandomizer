@@ -6,13 +6,16 @@
 //  Copyright © 2021 Arman Arutiunov. All rights reserved.
 //
 
-protocol Quality {
+import Utilities
+
+public protocol Quality: Weightable {
     var shortDescription: String { get }
     var fullDescription: String { get }
 }
 
 extension Quality {
-    func description(isShort: Bool) -> String {
+
+    public func description(isShort: Bool) -> String {
         isShort ? shortDescription : fullDescription
     }
 }
