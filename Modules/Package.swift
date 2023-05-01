@@ -19,6 +19,8 @@ let package = Package(
         .target(name: "MusicTheory",
                 dependencies: ["Utilities"]),
         .target(name: "Utilities",
-                dependencies: [])
+                dependencies: []),
+        .testTarget(name: "MusicTheoryTests",
+                    dependencies: ["MusicTheory"])
     ]
 )
