@@ -16,7 +16,18 @@
 		28FFCCDD285F56B3000615DA /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 28FFCCDC285F56B3000615DA /* Utilities */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2894A01829FFFC24007F286D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28FFCCA0285F4D55000615DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28FFCCA7285F4D55000615DA;
+			remoteInfo = ChordRandomizer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2894A01429FFFC24007F286D /* ChordRandomizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordRandomizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FFCCA8285F4D55000615DA /* ChordRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FFCCAB285F4D55000615DA /* ChordRandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordRandomizerApp.swift; sourceTree = "<group>"; };
 		28FFCCAD285F4D55000615DA /* RandomizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerView.swift; sourceTree = "<group>"; };
@@ -28,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2894A01129FFFC24007F286D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28FFCCA5285F4D55000615DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,11 +58,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2894A01529FFFC24007F286D /* ChordRandomizerTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChordRandomizerTests;
+			sourceTree = "<group>";
+		};
 		28FFCC9F285F4D55000615DA = {
 			isa = PBXGroup;
 			children = (
 				28FFCCD9285F55BE000615DA /* Modules */,
 				28FFCCAA285F4D55000615DA /* ChordRandomizer */,
+				2894A01529FFFC24007F286D /* ChordRandomizerTests */,
 				28FFCCA9285F4D55000615DA /* Products */,
 				28FFCCCD285F551F000615DA /* Frameworks */,
 			);
@@ -54,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				28FFCCA8285F4D55000615DA /* ChordRandomizer.app */,
+				2894A01429FFFC24007F286D /* ChordRandomizerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +124,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2894A01329FFFC24007F286D /* ChordRandomizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2894A01A29FFFC24007F286D /* Build configuration list for PBXNativeTarget "ChordRandomizerTests" */;
+			buildPhases = (
+				2894A01029FFFC24007F286D /* Sources */,
+				2894A01129FFFC24007F286D /* Frameworks */,
+				2894A01229FFFC24007F286D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2894A01929FFFC24007F286D /* PBXTargetDependency */,
+			);
+			name = ChordRandomizerTests;
+			productName = ChordRandomizerTests;
+			productReference = 2894A01429FFFC24007F286D /* ChordRandomizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		28FFCCA7285F4D55000615DA /* ChordRandomizer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28FFCCB7285F4D56000615DA /* Build configuration list for PBXNativeTarget "ChordRandomizer" */;
@@ -125,9 +170,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					2894A01329FFFC24007F286D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 28FFCCA7285F4D55000615DA;
+					};
 					28FFCCA7285F4D55000615DA = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -147,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				28FFCCA7285F4D55000615DA /* ChordRandomizer */,
+				2894A01329FFFC24007F286D /* ChordRandomizerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2894A01229FFFC24007F286D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28FFCCA6285F4D55000615DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +221,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2894A01029FFFC24007F286D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28FFCCA4285F4D55000615DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,7 +240,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2894A01929FFFC24007F286D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28FFCCA7285F4D55000615DA /* ChordRandomizer */;
+			targetProxy = 2894A01829FFFC24007F286D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2894A01B29FFFC24007F286D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FAMK9DA8KT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armanarutiunov.ChordRandomizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChordRandomizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChordRandomizer";
+			};
+			name = Debug;
+		};
+		2894A01C29FFFC24007F286D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FAMK9DA8KT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armanarutiunov.ChordRandomizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChordRandomizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChordRandomizer";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		28FFCCB5285F4D56000615DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -210,6 +333,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -268,6 +392,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -294,6 +419,7 @@
 				CODE_SIGN_ENTITLEMENTS = ChordRandomizer/ChordRandomizer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChordRandomizer/Preview Content\"";
 				DEVELOPMENT_TEAM = FAMK9DA8KT;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -326,6 +452,7 @@
 				CODE_SIGN_ENTITLEMENTS = ChordRandomizer/ChordRandomizer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChordRandomizer/Preview Content\"";
 				DEVELOPMENT_TEAM = FAMK9DA8KT;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -353,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2894A01A29FFFC24007F286D /* Build configuration list for PBXNativeTarget "ChordRandomizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2894A01B29FFFC24007F286D /* Debug */,
+				2894A01C29FFFC24007F286D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		28FFCCA3285F4D55000615DA /* Build configuration list for PBXProject "ChordRandomizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
