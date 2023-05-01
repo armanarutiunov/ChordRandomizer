@@ -28,7 +28,9 @@ struct RandomizerView: View {
     }
 
     private var labels: some View {
-        VStack(alignment: .leading) {
+        VStack(spacing: 25) {
+            Text(viewModel.key.description)
+                .font(.title)
             Text(viewModel.chord.description())
                 .font(.largeTitle)
         }
@@ -39,8 +41,12 @@ struct RandomizerView: View {
             HStack {
                 Button(action: viewModel.makeRandomTriad,
                        label: { Text("Random Triad") })
+
                 Button(action: viewModel.makeRandomSeventhChord,
                        label: { Text("Random 7th Chord") })
+
+                Button(action: viewModel.makeRandomKey,
+                       label: { Text("Random Key") })
             }
         }
     }

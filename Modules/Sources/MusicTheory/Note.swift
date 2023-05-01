@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Note: CustomStringConvertible, CaseIterable {
+public enum Note: CustomStringConvertible, CaseIterable, Identifiable, Equatable {
 
     // MARK: - Declarations
 
@@ -31,21 +31,58 @@ public enum Note: CustomStringConvertible, CaseIterable {
 
     /// This array contains all notes.
     public static let allCases: [Note] = [
-        c(nil),   c(.sharp),
-        d(nil),
-        e(.flat), e(nil),
-        f(nil),   f(.sharp),
-        g(nil),
-        a(.flat), a(nil),
-        b(.flat), b(nil)
+        c(),
+        c(.sharp), d(.flat),
+        d(),
+        d(.sharp), e(.flat),
+        e(),
+        f(),
+        f(.sharp), g(.flat),
+        g(),
+        g(.sharp), a(.flat),
+        a(),
+        a(.sharp), b(.flat),
+        b(), c(.flat),
     ]
 
-    /// This function returns the frequency of this note in the 4th octave.
-    private var frequency: Double {
-        let index = Note.allCases.firstIndex(where: { $0 == self })! -
-                    Note.allCases.firstIndex(where: { $0 == Note.a(nil) })!
+    public var id: Int {
+        switch self {
+        case .c(nil), .b(.sharp):
+            return 0
 
-        return 440 * pow(2, Double(index) / 12.0)
+        case .c(.sharp), .d(.flat):
+            return 1
+
+        case .d(nil):
+            return 2
+
+        case .d(.sharp), .e(.flat):
+            return 3
+
+        case .e(nil), .f(.flat):
+            return 4
+
+        case .e(.sharp), .f(nil):
+            return 5
+
+        case .f(.sharp), .g(.flat):
+            return 6
+
+        case .g(nil):
+            return 7
+
+        case .g(.sharp), .a(.flat):
+            return 8
+
+        case .a(nil):
+            return 9
+
+        case .a(.sharp), .b(.flat):
+            return 10
+
+        case .b(nil), .c(.flat):
+            return 11
+        }
     }
 
     /// This property is used in the User Interface to show the name of this note.
@@ -78,15 +115,90 @@ public enum Note: CustomStringConvertible, CaseIterable {
         }
     }
 
+    public var firstLetterDescription: String {
+        "\(description.first!)"
+    }
+
+    // MARK: - Life Cycle
+
+    public init?(name: String, accidental: Accidental? = nil) {
+        switch (name, accidental) {
+        case ("C", nil):
+            self = .c()
+
+        case ("C", .flat):
+            self = .c(.flat)
+
+        case ("C", .sharp):
+            self = .c(.sharp)
+
+        case ("D", nil):
+            self = .d()
+
+        case ("D", .flat):
+            self = .d(.flat)
+
+        case ("D", .sharp):
+            self = .d(.sharp)
+
+        case ("E", nil):
+            self = .e()
+
+        case ("E", .flat):
+            self = .e(.flat)
+
+        case ("E", .sharp):
+            self = .e(.sharp)
+
+        case ("F", nil):
+            self = .f()
+
+        case ("F", .flat):
+            self = .f(.flat)
+
+        case ("F", .sharp):
+            self = .f(.sharp)
+
+        case ("G", nil):
+            self = .g()
+
+        case ("G", .flat):
+            self = .g(.flat)
+
+        case ("G", .sharp):
+            self = .g(.sharp)
+
+        case ("A", nil):
+            self = .a()
+
+        case ("A", .flat):
+            self = .a(.flat)
+
+        case ("A", .sharp):
+            self = .a(.sharp)
+
+        case ("B", nil):
+            self = .b()
+
+        case ("B", .flat):
+            self = .b(.flat)
+
+        case ("B", .sharp):
+            self = .b(.sharp)
+
+        default:
+            return nil
+        }
+    }
+
     static var random: Note {
         let randomIndex = Int(arc4random_uniform(UInt32(allCases.count)))
         return allCases[randomIndex]
     }
-}
 
-/// We override the equality operator so we can use `indexOf` on the static array
-/// of all notes. Using the `description` property isn't the most idiomatic way
-/// to do this but it does the job.
-func ==(a: Note, b: Note) -> Bool {
-    return a.description == b.description
+    // MARK: - Actions
+
+    public func frequency(inOctave octave: Octave) -> Double {
+        Pitch(note: self, octave: octave).frequency
+    }
 }

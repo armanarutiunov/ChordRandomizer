@@ -14,6 +14,8 @@ final class RandomizerViewModel: ObservableObject {
 
     // MARK: - Properties
 
+    @Published var key: Key = Key.random
+
     @Published var chord: Chord = Triad.random
 
     // MARK: - Actions
@@ -24,5 +26,14 @@ final class RandomizerViewModel: ObservableObject {
 
     func makeRandomSeventhChord() {
         chord = SeventhChord.random
+    }
+
+    func makeRandomKey() {
+        let randomKey = Key.random
+        if randomKey != key {
+            key = randomKey
+        } else {
+            makeRandomKey()
+        }
     }
 }
